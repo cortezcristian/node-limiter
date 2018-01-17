@@ -11,6 +11,11 @@ $ node-limiter -t 10 -c 77 -l chrome,mongo
 
 This command will check for new processes every 10 seconds, and the max cpu percentage limit is set to 77. For all the process that matches chrome or mongo.
 
+- `-l` is the list of words (processes names) you want to grep, as comma separated values.
+- `-t` is how often it will scan for new processes, defaults to 20 seconds
+- `-c` is the CPU limit, defaults to 50
+
+You need to keep the terminal open for this to work.
 
 ## Installation
 
