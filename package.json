@@ -1,0 +1,35 @@
+{
+  "name": "node-limiter",
+  "version": "1.0.3",
+  "description": "CPU Limiter for Node",
+  "main": "index.js",
+  "scripts": {
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "node-limiter": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cortezcristian/node-limiter.git"
+  },
+  "keywords": [
+    "node",
+    "cpu",
+    "limit",
+    "limiter",
+    "cpulimit"
+  ],
+  "author": "Cristian Cortez",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cortezcristian/node-limiter/issues"
+  },
+  "homepage": "https://github.com/cortezcristian/node-limiter#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "shelljs": "^0.7.3"
+  }
+}
