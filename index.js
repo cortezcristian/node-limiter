@@ -53,7 +53,7 @@ var findProcesses = function(){
       console.log("No process found, will try again in "+wait_secs+"s");
     } else if(process_limiting.indexOf(pid) === -1) {
       console.log("Process found with pid: ", pid);
-      var limiter = "cpulimit --p "+pid+" --limit "+cpu_limit+" ";
+      var limiter = "cpulimit -p "+pid+" -l "+cpu_limit+" ";
       console.log(limiter);
       process_limiting.push(pid);
       nodeLimiter(limiter, pid, wait_secs);
