@@ -1,6 +1,6 @@
 {
   "name": "node-limiter",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "description": "CPU Limiter for Node",
   "main": "index.js",
   "scripts": {
